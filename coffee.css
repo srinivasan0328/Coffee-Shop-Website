@@ -1,0 +1,844 @@
+/* ::::CSS Sequence (7 steps):::: */
+
+/* step1: parentContainer */
+/* step2: component */
+/* step3: componentContainer */
+/* step4: row */
+/* step5: column */
+/* step6: subColumn */
+/* step7: contentContainer */
+
+
+/* ::::CSS Sequence (7 steps):::: */
+
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* navBar */
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.navBarSection{
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 1px 5px 1px var(--lightColor);
+}
+
+/* step3: componentContainer */
+.navBarContainer{
+    /* background-color: #6666ab; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* step4: row */
+.navBody{
+    /* background-color: #d49494; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+}
+
+/* step5: column 1 */
+.logoBlock{
+    /* background-color: #7d4c4c; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* step6: subColumn 1 */
+.logoBox{
+    /* background-color: #b8860b; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* step7: contentContainer */
+.logoBox img{
+    /* background-color: #b55d5d; */
+    height: 5rem;
+    margin-left: 5rem;
+}
+
+/* step5: column 2 */
+.navLinkBlock{
+    /* background-color: #ffff00; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* step6: subColumn 1 */
+.navLinkBox{
+    /* background-color: #ad926f; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* step7: contentContainer */
+.navLinkBox li{
+    /* background-color: #9acd32; */
+    list-style: none;
+    font-size: 2rem;
+    /* justify-content: space-around; */
+}
+
+.navLinkBox a{
+    /* background-color: #d2691e; */
+    text-decoration: none;
+    color: var(--secondaryColor);
+    width: 100%;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    padding: 0rem 1.5rem;
+}
+
+
+/* her0 */
+
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.heroSection{
+    /* background-color: turquoise; */
+    width: 100%;
+}
+
+/* step3: componentContainer */
+.heroContainer{
+    /* background-color: #ff6347; */
+}
+
+/* step4: row */
+.heroBody{
+    background-color: #ffe4c4;
+    padding: 0rem;
+}
+
+/* step5: column */
+.heroBlock{
+   /* background-color: #00ffff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15rem 0rem;
+}
+
+/* step6: subColumn */
+.heroBox{
+    /* background-color: #10dab2; */
+    width: 50%;
+}
+
+/* step7: contentContainer */
+.heroBox h1{
+    /* background-color: #7fff00; */
+    font-family: var(--ffPrimary);
+    font-size: 5rem;
+    color: var(--secondaryColor);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.heroBox p{
+    /* background-color: #b2cb9a; */
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+}
+
+.heroBox button{
+    background-color:var(--tertiaryColor);
+    color: var(--primaryColor);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer; 
+}
+
+.heroBox button:hover{
+    background: #000000;
+}
+
+.heroSection button:hover{
+    /* background: black; */
+}
+
+/* aboutUs */
+
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.aboutUsSection{
+    /* background-color: #7ababa; */
+}
+
+/* step3: componentContainer */
+.aboutContainer{
+    /* background-color: #3f3f81; */
+}
+
+/* step4: row */
+.aboutUsBody{
+    /* background-color: #b384b3; */
+}
+
+/* step5: column1 */
+.aboutUsImageBlock{
+    /* background-color: #8a2be2; */
+    
+}
+
+/* step6: subColumn1 */
+.aboutUsImageBox{
+    /* background-color: #e1dc87;  */
+}
+
+/* step7: contentContainer */
+.aboutUsImageBox img{
+    /* background-color: #a55959; */
+}
+
+/* step5: column2 */
+.aboutUsBlock{
+    /* background-color: #8e8e55; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* step6: subColumn2 */
+.abutUsBox{
+    /* background-color: #508250; */
+}
+
+/* step7: contentContainer */
+.abutUsBox h2{
+    /* background-color: #e56464; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+}
+
+.abutUsBox p{
+    /* background-color: #387d60; */
+    font-family: var(--ffSecondary);
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+}
+
+.abutUsBox button{
+    background-color: var(--tertiaryColor);
+    padding: 1rem 3rem;
+    border: none;
+    color: var(--primaryColor);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.abutUsBox button:hover{
+    background: var(--darkColor);
+}
+
+/* facility */
+
+
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.facilitySection{
+    /* background-color: #00ffff; */
+}
+
+/* step3: componentContainer */
+.facilityContainer{
+    /* background-color: #ffe4c4; */
+}
+
+/* step4: row 1 */
+.headingBody{
+    /* background-color: #ffff00; */
+}
+
+/* step5: column 1 */
+.headingBlock{
+    /* background-color: #a52a2a; */
+}
+
+/* step6: subColumn 1*/
+.headingBox{
+    /* background-color: #0000ff; */
+}
+
+/* step6: subColumn 2*/
+.headingImgBox{
+    /* background-color: #deb887; */
+}
+
+/* step7: contentContainer */
+.headingImgBox img{
+    /* background-color: #d2de87; */
+    height: 4rem;
+}
+
+.headingBox h2{
+    /* background-color: #414190; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/* step4: row 2 */
+.facilityBody{
+    /* background-color:#ffd700; */
+}
+
+/* step5: column 1 */
+.facilityBlock{
+    /* background-color: #ee82ee; */
+}
+
+/* step6: subColumn 1*/
+.facilityCard{
+    /* background-color: #ff6347; */
+}
+
+/* step6: subColumn 2*/
+.facilityCardHead{
+    /* background-color: #d2b48c; */
+}
+
+/* step7: contentContainer */
+.facilityCardHead img{
+    /* background-color: #846237; */
+}
+
+/* step6: subColumn 3*/
+.facilityCardBody{
+    /* background-color: #008080; */
+}
+
+/* step7: contentContainer */
+.facilityBody h3{
+    /* background-color: #57938f; */
+    font-family: var(--ffSecondary);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+.facilityBody p{
+    /* background-color: #577930; */
+    text-align: center;
+}
+
+/* menu */
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.menuSection{
+    /* background-color: #00ffff; */
+}
+
+/* step3: componentContainer */
+.menuContainer{
+    /* background-color: #ffe4c4; */
+}
+
+/* step4: row 1 */
+.headingBody{
+    /* background-color: #ffff00; */
+}
+
+/* step5: column 1 */
+.headingBlock{
+    /* background-color: #a52a2a; */
+}
+
+/* step6: subColumn 1*/
+.headingBox{
+    /* background-color: #0000ff; */
+}
+
+/* step6: subColumn 2*/
+.headingImgBox{
+    /* background-color: #deb887; */
+}
+
+/* step7: contentContainer */
+.headingImgBox img{
+    /* background-color: #d2de87; */
+    height: 4rem;
+}
+
+.headingBox h2{
+    /* background-color: #414190; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/* step4: row 2 */
+.menuBody{
+    /* background-color:#ffd700; */
+}
+
+/* step5: column 1 */
+.menuBlock{
+    /* background-color: #ee82ee; */
+}
+
+/* step6: subColumn 1*/
+.menuCard{
+    /* background-color: #ff6347; */
+}
+
+/* step6: subColumn 2*/
+.menuCardHead{
+    /* background-color: #a66256; */
+}
+
+/* step7: contentContainer */
+.menuCardHead img{
+    /* background-color: #846237; */
+    height: 30rem;
+}
+
+.menuCardBody{
+    /* background-color: #bd93d2; */
+}
+
+/* step6: subColumn 3*/
+.menuCardBody p{
+    /* background-color: #008080; */
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+
+/* gallery */
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.gallerySection{
+    /* background-color: #8ae2e2; */
+}
+
+/* step3: componentContainer */
+.galleryContainer{
+    /* background-color: #5f5fdd; */
+}
+
+/* step4: row 1 */
+.headingBody{
+    /* background-color: #9d70c8; */
+}
+
+/* step5: column */
+.headingBlock{
+    /* background-color: #ad6161; */
+}
+
+/* step6: subColumn */
+.headingImgBox{
+    /* background-color: #deb887; */
+}
+
+/* step7: contentContainer */
+.headingImgBox img{
+    /* background-color: #d2de87; */
+    height: 4rem;
+}
+
+.headingBox h2{
+    /* background-color: #414190; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/* step4: row 2 */
+.galleryBody{
+    /* background-color: #b36969; */
+}
+
+/* step5: column */
+.galleryBlock{
+    /* background-color: #c7c770; */
+}
+
+/* step6: subColumn */
+.galleryCard{
+    /* background-color: #69443d; */
+}
+
+/* step7: contentContainer */
+.galleryCard img{
+    /* background-color: #58a382; */
+    padding: 1.5rem;
+}
+
+/* team */
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.teamSection{
+    /* background-color: #8ae2e2; */
+}
+
+/* step3: componentContainer */
+.teamContainer{
+    /* background-color: #5f5fdd; */
+}
+
+/* step4: row 1 */
+.headingBody{
+    /* background-color: #9d70c8; */
+}
+
+/* step5: column */
+.headingBlock{
+    /* background-color: #ad6161; */
+}
+
+/* step6: subColumn */
+.headingImgBox{
+    /* background-color: #deb887; */
+}
+
+/* step7: contentContainer */
+.headingImgBox img{
+    /* background-color: #d2de87; */
+    height: 4rem;
+}
+
+.headingBox h2{
+    /* background-color: #414190; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/* step4: row 2 */
+.teamBody{
+    /* background-color: #b36969; */
+}
+
+/* step5: column */
+.teamBlock{
+    /* background-color: #c7c770; */
+}
+
+/* step6: subColumn 1*/
+.teamCard{
+    /* background-color: #ff6347; */
+}
+
+/* step6: subColumn 2*/
+.teamCardHead{
+    /* background-color: #a66256; */
+}
+
+/* step7: contentContainer */
+.teamCardHead img{
+    /* background-color: #846237; */
+    padding: 0rem 1.5rem;
+}
+
+.teamCardBody{
+    /* background-color: #bd93d2; */
+}
+
+/* step6: subColumn 3*/
+.teamCardBody p{
+    /* background-color: #008080; */
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+/* contactUs */
+
+
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.contactUsSection{
+    /* background-color: #ffff00; */
+}
+
+/* step3: componentContainer */
+.contactUsContainer{
+    /* background-color: #00ffff; */
+    
+}
+
+/* step4: row 1*/
+.headingBody{
+    /* background-color: #834ab7; */
+}
+
+/* step5: column 1*/
+.headingBlock{
+    /* background-color: #895353; */
+}
+
+/* step6: subColumn 1 */
+.headingBox{
+    /* background-color: #b5a08a; */
+}
+
+/* step6: subColumn 2*/
+.headingImgBox{
+    /* background-color: #deb887; */
+}
+
+/* step7: contentContainer */
+.headingImgBox img{
+    /* background-color: #d2de87; */
+    height: 4rem;
+}
+
+/* step7: contentContainer */
+.headingBox h2{
+    /* background-color: #5c5c89; */
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+/* step4: row 2 */
+.contactUsBody{
+    /* background-color: #bc6e6e; */
+}
+
+/* step5: column 1*/
+.contactUsImgBlock{
+    /* background-color: #ffff00; */
+}
+
+/* step6: subColumn 1 */
+.contactUsImgBox{
+    /* background-color: #835283; */
+}
+
+/* step7: contentContainer */
+.contactUsImgBox img{
+    /* background-color: #ee82ee; */
+}
+
+/* step5: column 2*/
+.contactUsFormBlock{
+    /* background-color: #6289aa; */
+}
+
+/* step6: subColumn 1 */
+.contactUsFormBox{
+    /* background-color: #4682b4; */
+    border: 1px solid var(--darkColor);
+    padding: 1rem 10rem;
+}
+
+/* step6: subColumn 2 */
+.formTitle{
+    /* background-color: #755197; */
+}
+
+/* step7: contentContainer */
+.formTitle h3{
+    /* background-color: #d8bfd8; */
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* step6: subColumn 3 */
+.contactBox{
+    /* background-color: #00ff7f; */
+}
+
+/* step7: contentContainer */
+.contactBox input{
+    /* background-color: #77ac91; */
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--darkColor);
+    margin-bottom: 3rem;
+}
+
+.contactBox button{
+    background-color: var(--tertiaryColor);
+    color: var(--primaryColor);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.contactBox button:hover{
+    background: var(--darkColor);
+}
+
+/* footer */
+/* step1: parentContainer */
+
+/* already written in style.css */
+
+/* step2: component */
+.footerSection{
+    /* background-color: #00ffff; */
+}
+
+/* step3: componentContainer */
+.footerContainer{
+    /* background-color: #ffe4c4; */
+}
+
+/* step4: row 1 */
+.footerBody{
+    /* background-color: #4b74d4; */
+}
+
+/* step5: column 1 */
+.iconBlock{
+    /* background-color: #a52a2a; */
+    
+}
+
+/* step6: subColumn 1*/
+.footerCard{
+    /* background-color: #a785a3; */
+}
+
+/* step6: subColumn 2*/
+.footerCardHead{
+    /* background-color: #99d28c; */
+}
+
+/* step7: contentContainer */
+.footerCardHead i{
+    /* background-color: #d2b48c; */
+    margin-bottom: 5rem;
+}
+
+/* step6: subColumn 2*/
+.facilityCardBody{
+    /* background-color: #008080; */
+}
+
+/* step7: contentContainer */
+.footerCardBody h3{
+    /* background-color: #57938f; */
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.footerCardBody p{
+    /* background-color: #577930; */
+    font-size: 2rem;
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+hr{
+    width: 90%;
+    height: 3px;
+    background-color: var(--darkColor);
+    margin: auto;
+}
+
+/* step4: row 2 */
+.copyRightsBody{
+    /* background-color: #ba5aba; */
+}
+
+/* step5: column 1 */
+.copyRightsBlock{
+    /* background-color: #3da4a4; */
+}
+
+/* step6: subColumn 1*/
+.copyRightsBox{
+    /* background-color: #a9a9a9; */
+}
+
+/* step7: contentContainer */
+.copyRightsBox p{
+    /* background-color: #e9b5b5; */
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.copyRightsBox span{
+    /* background-color: #a2c391; */
+    color: var(--tertiaryColor);
+}
